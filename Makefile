@@ -1,8 +1,9 @@
 
-.PHONY: setup gb
+TARGET=bin/kubectl
 
-all: setup gb
-	gb build all
+.PHONY: setup gb all
+
+all: setup gb $(TARGET)
 
 setup: 
 	git submodule init
@@ -10,3 +11,6 @@ setup:
 
 gb:
 	go get github.com/constabulary/gb/...
+
+bin/kubectl:
+	gb build all
