@@ -4,8 +4,8 @@ import (
 	"flag"
 	"log"
 
-	"./haproxy"
-	"./keystore"
+	"github.com/sreis/kuproxy/haproxy"
+	"github.com/sreis/kuproxy/keystore"
 )
 
 //
