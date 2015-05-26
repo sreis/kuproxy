@@ -77,7 +77,6 @@ func Watch(master string) error {
 
 	go watch(client, receiver, stop)
 
-	log.Println("Watching and waiting for pods to come online...")
 	for {
 		select {
 		case resp := <-receiver:
