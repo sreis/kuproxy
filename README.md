@@ -15,8 +15,10 @@ goes online/offline.
 
 ## Build
 
+Run make to install dependencies and build the project.
+
 ```
-gb build all
+make
 ```
 
 ## Run
