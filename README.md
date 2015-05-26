@@ -9,11 +9,16 @@ pod goes online/offline.
 For now it just prints a bunch of debug info when a Kubernetes pod
 goes online/offline.
 
+## Pre-requisites
+
+* [gb](https://github.com/constabulary/gb) build tool
+
 ## Build
 
+Run make to install dependencies and build the project.
+
 ```
-go get github.com/coreos/go-etcd/etc
-go build
+make
 ```
 
 ## Run
