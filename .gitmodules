@@ -1,0 +1,3 @@
+[submodule "vendor/src/github.com/coreos/go-etcd"]
+	path = vendor/src/github.com/coreos/go-etcd
+	url = https://github.com/coreos/go-etcd

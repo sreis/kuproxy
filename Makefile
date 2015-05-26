@@ -1,13 +1,12 @@
 
-DEPENDECIES=vendor/src/github.com/coreos/go-etcd/
+.PHONY: setup gb
 
 all: setup gb
 	gb build all
 
-setup: $(DEPENDECIES)
+setup: 
+	git submodule init
+	git submodule update
 
 gb:
 	go get github.com/constabulary/gb/...
-
-vendor/src/github.com/coreos/go-etcd/:
-	git clone https://github.com/coreos/go-etcd/ vendor/src/github.com/coreos/go-etcd/
